@@ -37,6 +37,15 @@
       justify-content: space-evenly;
 	  text-align: center;
 	}
+	.containerimg {
+	  border-top-left-radius: 10px;
+	  border-top-right-radius: 10px;
+	  filter: grayscale(1);
+	  transition: filter 0.5s ease;
+	}
+	.containerimg:hover {
+	  filter: none;
+	}
     </style>
   </head>
 <body>
@@ -83,7 +92,7 @@
 <!-- About Section -->
 <div class="container geoma-color" style="padding:128px 16px" id="about">
   <h3 class="center">SOBRE</h3>
-  <p class="center large">Lorem ipsum dolor sit amet.</p>
+  <p class="center large">Descubra mais sobre o nosso grupo de pesquisa.</p>
   <div class="row-padding center" style="margin-top:64px">
     <div class="quarter">
       <i class="fa fa-bookmark  margin-bottom jumbo center"></i>
@@ -112,13 +121,13 @@
 <div class="container geoma-color-1" style="padding:128px 16px">
   <div class="row-padding">
     <div class="col m6" style="width: 50%; padding: 0 15px; display: flex; flex-direction: column; flex-wrap: nowrap; align-content: center; justify-content: center; align-items: center;">
-      <img class="image round-large" src="data/img/lab.jpg" alt="Buildings" width="700" height="394">
+      <img class="image round-large" src="data/img/trabalho.png" alt="Buildings" width="400" height="394">
     </div>
-	<div class="col m6" style="width: 43%; padding: 0 15px; display: flex; flex-direction: column; flex-wrap: nowrap; align-content: center; justify-content: center; align-items:  flex-start;">
-      <h3 style="margin-top: 0px">Lorem Ipsum.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum tempor incididunt ut labore et dolore.</p>
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum tempor incididunt ut labore et dolore.</p>
-      <p><a href="#work" class="button geoma-color-4"> Nosso Trabalho</a></p>
+	<div class="col m6" style="width: 43%; padding: 0 15px; display: flex; flex-direction: column; flex-wrap: nowrap; align-content: center; justify-content: center; align-items:  flex-start; text-align: justify;">
+      <h3 style="margin-top: 0px">Nosso Trabalho</h3>
+      <p>Este grupo é dedicado à pesquisa em diversas áreas da física, com o propósito central de fomentar a discussão de ideias e promover o compartilhamento de resultados de pesquisa entre seus membros. Nossos integrantes têm a oportunidade de apresentar suas pesquisas e analisar novas ideias que estejam emergindo globalmente na área da física.</p>
+	  <p>Encorajamos e valorizamos a possibilidade de estabelecer colaborações produtivas entre os trabalhos realizados dentro do grupo. Se você possui uma nova e empolgante ideia em qualquer ramo da física, não hesite em compartilhá-la conosco. Estamos ansiosos para enriquecer nossa comunidade com seu conhecimento e criatividade.</p>
+      <p><a href="https://discord.gg/bsD2Wv6AAE" class="button geoma-color-4" target="_blank"> Nosso Discord</a></p>
     </div>
   </div>
 </div>
@@ -126,7 +135,7 @@
 <!-- Paper Section -->
 <div class="container center geoma-color-2" style="padding:128px 16px" id="paper">
   <h3>ARTIGOS</h3>
-  <p class="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p class="large">Explore nossos estudos e descubra as últimas pesquisas.</p>
   <div class="row-padding" style="margin-top:64px">
     <div class="third section">
       <ul class="ul white hover-shadow">
@@ -164,11 +173,11 @@
 <!-- Team Section -->
 <div class="container geoma-color" style="padding:128px 16px" id="team">
   <h3 class="center">EQUIPE</h3>
-  <p class="center large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p class="center large">Conheça a equipe de pesquisadores.</p>
   <div class="row-padding" style="margin-top:64px">
     <div class="col l3 m6 margin-bottom">
       <div class="card geoma-card">
-        <img src="data/img/profile.jpg" alt="profile1" style="width:100%">
+        <img class="containerimg" src="data/img/profile/Kleuton Antunes Lopes Lima.png" alt="profile1" style="width:100%">
         <div class="container">
           <h5 class="containername" >Kleuton Antunes Lopes Lima</h5>
           <p class="opacity"></p>
@@ -179,7 +188,7 @@
     </div>
     <div class="col l3 m6 margin-bottom">
       <div class="card geoma-card">
-        <img src="data/img/profile.jpg" alt="profile2" style="width:100%">
+        <img class="containerimg" src="data/img/profile/Otávio de Brito Silva.png" alt="profile2" style="width:100%">
         <div class="container">
           <h5 class="containername" >Otávio de Brito Silva</h5>
           <p class="opacity"></p>
@@ -190,7 +199,7 @@
     </div>
     <div class="col l3 m6 margin-bottom">
       <div class="card geoma-card">
-        <img src="data/img/profile.jpg" alt="profile3" style="width:100%">
+        <img class="containerimg" src="data/img/profile/Neymar José Nepomuceno Cavalcante.png" alt="profile3" style="width:100%">
         <div class="container">
           <h5 class="containername" >Neymar José Nepomuceno Cavalcante</h5>
           <p class="opacity"></p>
@@ -201,7 +210,7 @@
     </div>
     <div class="col l3 m6 margin-bottom">
       <div class="card geoma-card">
-        <img src="data/img/profile.jpg" alt="profile4" style="width:100%">
+        <img class="containerimg" src="data/img/profile/Emanuel Jose Alexandrino Dos Santos.png" alt="profile4" style="width:100%">
         <div class="container">
           <h5 class="containername" >Emanuel Jose Alexandrino Dos Santos</h5>
           <p class="opacity"></p>
