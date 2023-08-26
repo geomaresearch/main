@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GEOMA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="data/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="data/css/style.css">
+	<link rel="stylesheet" href="data/css/geoma-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+	  margin: 0 auto;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("data/img/img.jpg");
+      min-height: 100%;
+    }
+
+    .bar .button {
+      padding: 16px;
+    }
+	.containername {
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+	  text-align: center;
+	}
+    </style>
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar geoma-color card" id="myNavbar">
+    <a href="#home" class="bar-item button wide">GEOMA</a>
+    <!-- Right-sided navbar links -->
+    <div class="right hide-small">
+      <a href="#about" class="bar-item button" style="padding: 16px 20px"> SOBRE</a>
+	  <a href="#paper" class="bar-item button" style="padding: 16px 20px"> ARTIGOS</a>
+      <a href="#team" class="bar-item button" style="padding: 16px 20px"> EQUIPE</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium" onclick="openSidebar()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="sidebar bar-block black card animate-left hide-medium hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeSidebar()" class="bar-item button large padding-16">Fechar ×</a>
+  <a href="#about" onclick="closeSidebar()" class="bar-item button">SOBRE</a>
+  <a href="#paper" onclick="closeSidebar()" class="bar-item button">ARTIGOS</a>
+  <a href="#team" onclick="closeSidebar()" class="bar-item button">EQUIPE</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 display-container grayscale-max" id="home">
+  <div class="display-left text-white" style="padding:48px">
+    <span class="jumbo hide-small">Grupo da Estrutura Eletrônica<br>e Óptica da Matéria</span><br>
+    <span class="xxlarge hide-large hide-medium">Grupo da Estrutura Eletrônica e Óptica da Matéria</span><br>
+    <span class="large">Universaidade Estadual do Piauí</span>
+    <p><a href="#about" class="button geoma-color-5 padding-large large margin-top opacity hover-opacity-off">Saiba mais</a></p>
+  </div> 
+  <div class="display-bottomleft text-grey large" style="padding:24px 48px">
+    <i class="fa fa-linkedin hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="container geoma-color" style="padding:128px 16px" id="about">
+  <h3 class="center">SOBRE</h3>
+  <p class="center large">Lorem ipsum dolor sit amet.</p>
+  <div class="row-padding center" style="margin-top:64px">
+    <div class="quarter">
+      <i class="fa fa-bookmark  margin-bottom jumbo center"></i>
+      <p class="large">Lorem Ipsum</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="quarter">
+      <i class="fa fa-bookmark  margin-bottom jumbo"></i>
+      <p class="large">Lorem Ipsum</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="quarter">
+      <i class="fa fa-bookmark  margin-bottom jumbo"></i>
+      <p class="large">Lorem Ipsum</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="quarter">
+      <i class="fa fa-bookmark  margin-bottom jumbo"></i>
+      <p class="large">Lorem Ipsum</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Lab Section -->
+<div class="container geoma-color-1" style="padding:128px 16px">
+  <div class="row-padding">
+    <div class="col m6" style="width: 50%; padding: 0 15px; display: flex; flex-direction: column; flex-wrap: nowrap; align-content: center; justify-content: center; align-items: center;">
+      <img class="image round-large" src="data/img/lab.jpg" alt="Buildings" width="700" height="394">
+    </div>
+	<div class="col m6" style="width: 43%; padding: 0 15px; display: flex; flex-direction: column; flex-wrap: nowrap; align-content: center; justify-content: center; align-items:  flex-start;">
+      <h3 style="margin-top: 0px">Lorem Ipsum.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum tempor incididunt ut labore et dolore.</p>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum tempor incididunt ut labore et dolore.</p>
+      <p><a href="#work" class="button geoma-color-4"> Nosso Trabalho</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Paper Section -->
+<div class="container center geoma-color-2" style="padding:128px 16px" id="paper">
+  <h3>ARTIGOS</h3>
+  <p class="large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div class="row-padding" style="margin-top:64px">
+    <div class="third section">
+      <ul class="ul white hover-shadow">
+        <li class="black xlarge padding-32">Lorem</li>
+        <li class="geoma-color"><div style="height:250px"></div></li>
+		<li class="geoma-color" style="padding:30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+        <li class="geoma-color-1 padding-24">
+          <button class="button geoma-color-4 padding-large">Saiba mais</button>
+        </li>
+      </ul>
+    </div>
+    <div class="third section">
+      <ul class="ul white hover-shadow">
+        <li class="black xlarge padding-32">Lorem</li>
+        <li class="geoma-color"><div style="height:250px"></div></li>
+		<li class="geoma-color" style="padding:30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+        <li class="geoma-color-1 padding-24">
+          <button class="button geoma-color-4 padding-large">Saiba mais</button>
+        </li>
+      </ul>
+    </div>
+    <div class="third section">
+      <ul class="ul white hover-shadow">
+        <li class="black xlarge padding-32">Lorem</li>
+        <li class="geoma-color"><div style="height:250px"></div></li>
+		<li class="geoma-color" style="padding:30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+        <li class="geoma-color-1 padding-24">
+          <button class="button geoma-color-4 padding-large">Saiba mais</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="container geoma-color" style="padding:128px 16px" id="team">
+  <h3 class="center">EQUIPE</h3>
+  <p class="center large">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <div class="row-padding" style="margin-top:64px">
+    <div class="col l3 m6 margin-bottom">
+      <div class="card geoma-card">
+        <img src="data/img/profile.jpg" alt="profile1" style="width:100%">
+        <div class="container">
+          <h5 class="containername" >Kleuton Antunes Lopes Lima</h5>
+          <p class="opacity"></p>
+          <p></p>
+          <p><a href="http://lattes.cnpq.br/1874859683286980" class="button geoma-color-3 block"><i class="fa fa-envelope" style="margin-right: 5px"></i> Contato</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col l3 m6 margin-bottom">
+      <div class="card geoma-card">
+        <img src="data/img/profile.jpg" alt="profile2" style="width:100%">
+        <div class="container">
+          <h5 class="containername" >Otávio de Brito Silva</h5>
+          <p class="opacity"></p>
+          <p></p>
+          <p><button class="button geoma-color-3 block"><i class="fa fa-envelope" style="margin-right: 5px"></i> Contato</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="col l3 m6 margin-bottom">
+      <div class="card geoma-card">
+        <img src="data/img/profile.jpg" alt="profile3" style="width:100%">
+        <div class="container">
+          <h5 class="containername" >Neymar José Nepomuceno Cavalcante</h5>
+          <p class="opacity"></p>
+          <p></p>
+          <p><button class="button geoma-color-3 block"><i class="fa fa-envelope" style="margin-right: 5px"></i> Contato</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="col l3 m6 margin-bottom">
+      <div class="card geoma-card">
+        <img src="data/img/profile.jpg" alt="profile4" style="width:100%">
+        <div class="container">
+          <h5 class="containername" >Emanuel Jose Alexandrino Dos Santos</h5>
+          <p class="opacity"></p>
+          <p></p>
+          <p><button class="button geoma-color-3 block"><i class="fa fa-envelope" style="margin-right: 5px"></i> Contato</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="center black padding-64">
+  <a href="#home" class="button geoma-color-3"><i class="fa fa-arrow-up" style="margin-right: 10px"></i>Voltar para o Início</a>
+  <div class="xlarge section">
+    <i class="fa fa-linkedin hover-opacity"></i>
+  </div>
+ <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</footer>
+ 
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function openSidebar() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function closeSidebar() {
+    mySidebar.style.display = "none";
+}
+
+// Slow scroll with anchor
+$(document).ready(function() {
+  $('a[href^="#"]').on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+
+</script>
+
+</body>
+</html>

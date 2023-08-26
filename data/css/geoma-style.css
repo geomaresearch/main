@@ -1,0 +1,43 @@
+.geoma-color {
+	color: #e8e6e3 !important;
+    background-color: #181a1b !important
+}
+a.bar-item:hover {
+	color: #e8e6e3 !important;
+    background-color: #35393b !important;
+}
+.geoma-color-1, .hover-geoma-color-1:hover {
+	color: #e8e6e3 !important;
+	background-color: #202324 !important
+}
+.geoma-color-2, .hover-geoma-color-2:hover {
+	color: #e8e6e3 !important;
+	background-color: #494f52 !important
+}
+.geoma-color-3 {
+	color: #e8e6e3 !important;
+    background-color: #202324 !important
+}
+.geoma-color-3:hover {
+	color: #e8e6e3 !important;
+    background-color: #35393b !important
+}
+.geoma-color-4 {
+	color: #e8e6e3 !important;
+    background-color: black !important
+}
+.geoma-color-4:hover {
+	color: #e8e6e3 !important;
+    background-color: #35393b !important
+}
+.geoma-color-5 {
+	color: #e8e6e3 !important;
+    background-color: #181a1b !important
+}
+.geoma-color-5:hover {
+	color: #e8e6e3 !important;
+    background-color: #35393b !important
+}
+.geoma-card {
+	background-color: #000;
+}
