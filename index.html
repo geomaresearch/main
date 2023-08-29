@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="data/css/style.css">
 	<link rel="stylesheet" href="data/css/geoma-style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-	<script src="https://kit.fontawesome.com/1925b74240.js"</script>
+	<script src="https://kit.fontawesome.com/1925b74240.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -30,20 +30,24 @@
     .bar .button {
       padding: 16px;
     }
-	.containername {
+
+	  .containername {
       min-height: 50px;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-	  text-align: center;
-	}
-	.containerimg {
-	  filter: grayscale(1);
-	  transition: filter 0.5s ease;
-	}
-	.containerimg:hover {
-	  filter: none;
-	}
+	    text-align: center;
+	  }
+
+	  .containerimg {
+	    filter: grayscale(1);
+	    transition: filter 0.5s ease;
+	  }
+
+	  .containerimg:hover {
+	    filter: none;
+	  }
+
     </style>
   </head>
 <body>
@@ -52,14 +56,15 @@
 <div class="top">
   <div class="bar geoma-color card" id="myNavbar">
     <a href="#home" class="bar-item button wide">GEOMA</a>
+    
     <!-- Right-sided navbar links -->
     <div class="right hide-small">
       <a href="#about" class="bar-item button" style="padding: 16px 20px"> SOBRE</a>
 	  <a href="#paper" class="bar-item button" style="padding: 16px 20px"> ARTIGOS</a>
       <a href="#team" class="bar-item button" style="padding: 16px 20px"> EQUIPE</a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
     <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium" onclick="openSidebar()">
       <i class="fa fa-bars"></i>
     </a>
