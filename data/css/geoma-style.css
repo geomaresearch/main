@@ -38,6 +38,14 @@ a.bar-item:hover {
 	color: #e8e6e3 !important;
     background-color: #35393b !important
 }
+.geoma-color-6 {
+	color: #e8e6e3 !important;
+    background-color: black !important
+}
+.geoma-color-6:hover {
+	color: #e8e6e3 !important;
+    background-color: #ffffff00 !important
+}
 .geoma-card {
 	padding: 20px;
 	margin: 0px 10px 20px 10px;
